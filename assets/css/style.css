@@ -34,7 +34,7 @@ p {
 }
 
 nav {
-    background-color: #ffffff00;
+    background-color: #fffffff2;
     height: 70px !important;
     line-height: 70px !important;
     box-shadow: 0 0 0 0 rgba(0,0,0,0.14), 0 0 0 0 rgba(0,0,0,0.12), 0 0 0 0 rgba(0,0,0,0.2) !important;
@@ -56,7 +56,11 @@ nav .brand-logo {
 }
 
 .side-nav {
-    background-color: #fffffff2 !important;
+    background: linear-gradient(2deg, #2a5d58f0 0%,#ffffff 75%) !important;
+}
+
+#sidenav-overlay {
+  background-color: transparent !important;
 }
 
 .banner .brand {
@@ -534,9 +538,8 @@ section.testimonials .heading h2 {
 header {
   position: relative;
   height: 95vh;
-  background: #ffffff91 ;
+/*  background: #ffffff91 ; */
 }
-
 
 
 header h1 {
@@ -621,4 +624,127 @@ header nav .btn:hover {
 .slanted {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+}
+
+/* CAP PAGE */
+
+#cap .banner {
+  background-image: url('../img/hring.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cap .banner .brand h1 {
+    font-weight: 800;
+    float: right;
+    right: 200px;
+}
+
+#cap .banner .brand button {
+    float: right;
+}
+
+#cap .one-button .btn-large {
+  font-weight: 800;
+  background-color: #FFC107 !important;
+  color: #ffffff;
+    border: 2px solid #FFC107;
+    border-radius: 3px;
+}
+
+/*#cap .one-button .btn-large:hover {
+  background-color: #FFC107 !important;
+  color: #ffffff;
+}*/
+
+#cap p {
+  color: #595959;
+}
+
+#cap .job-about p {
+  font-size: 16px;
+}
+#cap .job-desc p {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  color: #595959;
+  font-weight: 500;
+}
+.role-list, .skill-list, .benefit-list {
+    padding-bottom: 10px;
+    width: 100%;
+    list-style-position: inside;
+    color: #595959;
+}
+.role-list .role-text, .skill-list .skill-text, .benefit-list .benefit-text {
+    font-size: 15px;
+    line-height: 2em;
+    color: #595959;
+    font-family: 'Nunito', sans-serif;
+    list-style-type: square;
+}
+
+#cap .card-panel {
+  background-color: #f7f7f7 !important;
+  padding: 40px !important;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2) !important;
+}
+
+#cap .apply p {
+  font-size: 14px;
+}
+
+#cap .apply .one-button .btn-large {
+    font-weight: 800;
+    background-color: transparent!important;
+    color: #53b9ab;
+    border: 2px solid #53b9ab;
+    border-radius: 3px;
+}
+#cap .apply .one-button .btn-large:hover {
+  background-color: #53b9ab !important;
+  color: #ffffff;
+}
+
+#cap .divider {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#form.modal.open {
+  top: 1% !important;
+}
+
+#form.modal {
+  max-height: 100% !important;
+  width: 95% !important;
+}
+
+#form .one-button .btn-flat {
+  font-weight: 800;
+  background-color: transparent!important;
+  color: #F44336;
+  border: 2px solid #F44336;
+  border-radius: 3px;
+}
+
+#form .one-button .btn-flat:hover {
+  background-color: #F44336 !important;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 992px) {
+  #cap .brand .row .col.s6 {
+      width: 100% !important;
+      text-align:  left !important;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+  #cap .brand .row .one-button a {
+      text-align:  center !important;
+    }
 }
