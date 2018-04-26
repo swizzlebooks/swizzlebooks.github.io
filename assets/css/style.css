@@ -672,7 +672,15 @@ header nav .btn:hover {
   text-align: left;
   color: #595959;
   font-weight: 500;
+  text-shadow: 0 0 0.5px black;
 }
+
+@media only screen and (max-width: 640px) {
+  #cap .job-desc p {
+    text-align: center;
+  }
+}
+
 .role-list, .skill-list, .benefit-list {
     padding-bottom: 10px;
     width: 100%;
@@ -685,6 +693,7 @@ header nav .btn:hover {
     color: #595959;
     font-family: 'Nunito', sans-serif;
     list-style-type: square;
+    list-style-position: outside;
 }
 
 #cap .card-panel {
@@ -745,6 +754,19 @@ header nav .btn:hover {
 
 @media only screen and (max-width: 640px) {
   #cap .brand .row .one-button a {
-      text-align:  center !important;
+      text-align: center !important;
     }
+}
+
+@media only screen and (max-width: 992px) {
+  #form.modal.open {
+    top: 15% !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #form.modal {
+    max-height: 60% !important;
+    width: 95% !important;
+  }
 }
