@@ -60,7 +60,14 @@ nav .brand-logo {
 }
 
 #sidenav-overlay {
-  background-color: transparent !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    background-color: transparent !important;
+    z-index: 1 !important;
+    will-change: opacity;
 }
 
 .banner .brand {
